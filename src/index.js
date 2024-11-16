@@ -11,14 +11,14 @@ function refreshWeather(response) {
      
      
      
-     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon">`
      cityElement.innerHTML = response.data.city;
      timeElement.innerHTML = formatDate(date);
      descriptionElement.innerHTML = response.data.condition.description;
      humidityELement.innerHTML = `${response.data.temperature.humidity}%`;
      windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
      temperatureElement.innerHTML = Math.round(temperature);
-    
+     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon">`
+
      getForecast(response.data.city);
     }
     
@@ -59,7 +59,7 @@ function refreshWeather(response) {
 
     function formatDay(timestamp) {
         let date = new Date(timestamp * 1000);
-        let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
         return days[date.getDay()];
     }
@@ -88,8 +88,7 @@ function refreshWeather(response) {
             <strong>${Math.round(day.temperature.maximum)}°</strong>
           </div>
           <div class="weather-forecast-temperature">
-            ${Math.round(day.temperature.minimum)}°          
-            </div>
+            ${Math.round(day.temperature.minimum)}°</div>
         </div>
         </div>
         `;

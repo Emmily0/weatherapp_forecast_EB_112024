@@ -121,18 +121,18 @@ margin-right: 7px;
 .weather-forecast-temperatures {
     text-align: center;
     color: #28c4b7c7;
-    margin-top: 10px;
+    margin-top: 6px;
     display: flex;
     justify-content: center;
 }
 
 .weather-forecast-temperature strong {
-    color: #28c4b7;
+    color: #11bfb1;
 
 }
 .weather-forecast-temperature {
 padding: 0 10px;
-color: #28c4b7c7;
+color: #28c4b7d5;
 }
 
 
